@@ -38,11 +38,20 @@ public class Dashboard extends setup {
 	
 }
 
-	@Test(description="TC 008: Verify Admin user logged in")
+	@Test(description="TC 008: Verify Notification module accessible")
 	public void notificationclick()
 	{
 		driver.findElement(By.xpath("//body//div[@id='root']//div[@class='css-175oi2r r-1awozwy r-18u37iz r-10eez6h']//div[@class='css-175oi2r']//div[@class='css-175oi2r']//div[1]")).click();
 		driver.findElement(By.xpath("//div[@class='css-175oi2r r-1loqt21 r-1otgn73 r-kdyh1x r-vuvdlw r-3o4zer']//div[1]")).click();
+		
+		WebElement NotificationText = driver.findElement(By.cssSelector(".css-175oi2r.r-3lgkqa.r-5kkj8d.r-1l7z4oj.r-3pj75a"));
+
+		// 2. Print the actual text (better for debugging than the object reference)
+		System.out.println("Notifications Header Found: " + NotificationText.getText());
+
+		// 3. Combined Assertion: Check visibility and content in one go
+		Assert.assertTrue(NotificationText.getText().equals("Notifications"),  "Notifications text was either not displayed or the text content did not match.");
+		
 	}
 	
 	
