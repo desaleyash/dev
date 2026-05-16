@@ -19,7 +19,7 @@ public class Athlete extends setup {
 
 	public String email = testutils.generateEmail();
 
-	@Test(description = "TC 008: Verify user listing displaying on athlete module", priority = 0)
+	@Test(description = "TC 008: Verify user listing displaying on the athlete module", priority = 0)
 
 	public void athletepgsuccess() {
 
