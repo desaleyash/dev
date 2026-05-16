@@ -37,7 +37,14 @@ public class Dashboard extends setup {
 		
 	
 }
-	
+
+	@Test(description="TC 008: Verify Admin user logged in")
+	public void notificationclick()
+	{
+		driver.findElement(By.xpath("//body//div[@id='root']//div[@class='css-175oi2r r-1awozwy r-18u37iz r-10eez6h']//div[@class='css-175oi2r']//div[@class='css-175oi2r']//div[1]")).click();
+		driver.findElement(By.xpath("//div[@class='css-175oi2r r-1loqt21 r-1otgn73 r-kdyh1x r-vuvdlw r-3o4zer']//div[1]")).click();
+
+	}
 	
 	
 	
