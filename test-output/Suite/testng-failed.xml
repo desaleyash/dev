@@ -52,6 +52,22 @@
           <include name="athprofileview"/>
         </methods>
       </class> <!-- Admin.Athlete -->
+      <class name="Admin.Dashboard">
+        <methods>
+          <include name="openlogin"/>
+          <include name="tearDown"/>
+          <include name="adminuserconfirm"/>
+        </methods>
+      </class> <!-- Admin.Dashboard -->
+      <class name="coachcloud.dev.loginpage">
+        <methods>
+          <include name="openlogin"/>
+          <include name="tearDown"/>
+          <include name="forgetpasswrongemail"/>
+          <include name="logininvalidcred"/>
+          <include name="loginvalidcred"/>
+        </methods>
+      </class> <!-- coachcloud.dev.loginpage -->
     </classes>
   </test> <!-- EndToEnd(failed) -->
 </suite> <!-- Failed suite [Suite] -->

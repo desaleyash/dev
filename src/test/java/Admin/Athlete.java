@@ -171,6 +171,8 @@ public class Athlete extends setup {
 	  driver.findElement(By.xpath("//input[@type='email']")).click();
 	  driver.findElement(By.xpath("//input[@type='email']")).sendKeys( "yashathlete@yopmail.com"); 
 	  
+	  
+	  
 	  //Thread.sleep(1000);
 
 	  // click invite button 
