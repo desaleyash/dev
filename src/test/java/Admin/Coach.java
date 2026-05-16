@@ -334,7 +334,7 @@ public class Coach extends setup
 		  System.out.println("Toast Message: " + actualMessagee); Reporter.log("\"Toast Message: \"" + actualMessagee, true);
 		  
 		  
-		  Assert.assertEquals(actualMessagee, "Cooldown: You can only resend once every 24 hours.", "Toast message mismatch!");
+		  Assert.assertEquals(actualMessagee, "Cooldown: You can only resend once every 24 hours.", "Toast message mismatched!");
 		  
 		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); }
 		  
