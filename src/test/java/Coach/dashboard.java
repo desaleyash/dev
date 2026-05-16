@@ -23,7 +23,7 @@ public class dashboard extends setup
 	
 	
 	private static final String Threads = null;
-	@Test(description = "TC 014: Verify coach is able to login with credentials", priority = 11)
+	@Test(description = "TC 014: Verify coach is able to login with valid credentials", priority = 11)
 	public void coachlogin() throws InterruptedException
 	{
 		//public void logoutadmin()
