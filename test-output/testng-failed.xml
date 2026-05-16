@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="EndToEnd(failed)">
+    <classes>
+      <class name="Admin.Coach">
+        <methods>
+          <include name="coachpagination"/>
+          <include name="tearDown"/>
+          <include name="newchhstatus"/>
+          <include name="searchcoach"/>
+          <include name="blankmandatefield"/>
+          <include name="resentwithin24hrs"/>
+          <include name="existchhinvbyadmin"/>
+          <include name="coachpgsuccess"/>
+          <include name="coachinvbyadmin"/>
+          <include name="openlogin"/>
+          <include name="invpopupcchbyadminfillinfo"/>
+          <include name="deletecoach"/>
+          <include name="invpopupcchbyadmin"/>
+          <include name="coachtotalcount"/>
+        </methods>
+      </class> <!-- Admin.Coach -->
+      <class name="Coach.dashboard">
+        <methods>
+          <include name="coachlogin"/>
+          <include name="dashboardvalid"/>
+          <include name="dashboardcontentverify"/>
+          <include name="openlogin"/>
+          <include name="tearDown"/>
+          <include name="invitreachlimitdath"/>
+          <include name="coachplandetail"/>
+          <include name="athinvitepopupfillinfo"/>
+        </methods>
+      </class> <!-- Coach.dashboard -->
+      <class name="Admin.Athlete">
+        <methods>
+          <include name="newathstatus"/>
+          <include name="athinvbyadmin"/>
+          <include name="invpopupathbyadminfillinfo"/>
+          <include name="tearDown"/>
+          <include name="searchath"/>
+          <include name="existathinvbyadmin"/>
+          <include name="deleteath"/>
+          <include name="athpagination"/>
+          <include name="resentwithin24h"/>
+          <include name="athletepgsuccess"/>
+          <include name="openlogin"/>
+          <include name="invpopupathbyadmin"/>
+          <include name="totalcount"/>
+          <include name="blankmandatefield"/>
+          <include name="athprofileview"/>
+        </methods>
+      </class> <!-- Admin.Athlete -->
+    </classes>
+  </test> <!-- EndToEnd(failed) -->
+</suite> <!-- Failed suite [Suite] -->

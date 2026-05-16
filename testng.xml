@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="EndToEnd">
+    <classes>
+      <class name="coachcloud.dev.loginpage"/>
+      <class name="Admin.Dashboard"/>
+      <class name="Admin.Athlete"/>
+      <class name="Admin.Coach"/>
+      <class name="Coach.dashboard"/>
+
+         
+    </classes>
+  </test> <!-- EndToEnd -->
+</suite> <!-- Suite -->
